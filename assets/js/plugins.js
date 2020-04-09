@@ -1,1 +1,2 @@
 
+SmoothScroll({stepSize: 100});
