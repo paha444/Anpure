@@ -4,3 +4,4 @@
 # paralax
 # https://github.com/dixonandmoe/rellax
 # smoothscroll
+# jquery.pjax.js
