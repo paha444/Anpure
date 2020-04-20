@@ -10,3 +10,5 @@
 # https://github.com/RobinHerbots/Inputmask
 # validation 
 # https://github.com/horprogs/Just-validate
+# fancybox
+# https://fancyapps.com/fancybox/3/
