@@ -5,6 +5,6 @@
 
 @font-face {
   font-family: "montserrat";
-  font-display: fallback;
+  font-display: swap;
   src: local("montserrat"), url(Montserrat-Regular.woff2) format('woff2');
 }
