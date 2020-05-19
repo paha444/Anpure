@@ -4,11 +4,21 @@ var gulp         = require('gulp'),
 	cssnano      = require('gulp-cssnano'),
 	rename       = require('gulp-rename'),
 	del          = require('del'),
+	sass         =  require('gulp-sass'),
 	cache        = require('gulp-cache'),
+	sourcemaps = require('gulp-sourcemaps'),
 	autoprefixer = require('gulp-autoprefixer');
 
 
 
+function sass_compile() {
+	return gulp.src('assets/sass/**/*.scss')
+		.pipe(sourcemaps.init())
+		.pipe(sass.sync().on('error', sass.logError))
+		.pipe(cssnano())
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest('assets/css'));
+}
 
 //Compiled css
 function css_libs() {
@@ -88,5 +98,5 @@ exports.buildHtml = buildHtml;
 exports.buildImg = buildImg;
 exports.prefix = prefix;
 exports.cssIn = cssIn;
-
+exports.sass_compile = sass_compile;
 
