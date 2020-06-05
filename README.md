@@ -11,8 +11,7 @@
 # validation 
 # https://github.com/horprogs/Just-validate     
 #(.js-validate-error-field{left:100px;}),(js-validate-error-label{left:100px;})
-#data-validate-field="myField"
-#myField:{required:true,}
+#data-validate-field="myField" || myField:{required:true}
 # fancybox
 # https://fancyapps.com/fancybox/3/
 # viewport
