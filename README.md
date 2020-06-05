@@ -9,7 +9,8 @@
 # input mask
 # https://github.com/RobinHerbots/Inputmask
 # validation 
-# https://github.com/horprogs/Just-validate     (.js-validate-error-field{left:100px;}),(js-validate-error-label{left:100px;})
+# https://github.com/horprogs/Just-validate     e
+#(.js-validate-error-field{left:100px;}),(js-validate-error-label{left:100px;})
 # fancybox
 # https://fancyapps.com/fancybox/3/
 # viewport
