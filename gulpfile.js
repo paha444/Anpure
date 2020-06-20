@@ -7,7 +7,8 @@ var gulp         = require('gulp'),
 	sass         =  require('gulp-sass'),
 	cache        = require('gulp-cache'),
 	sourcemaps = require('gulp-sourcemaps'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+        uglifys = require('gulp-uglify-es').default;
 
 
 
@@ -33,7 +34,7 @@ function scripts() {
 		'assets/libs/jquery-3.3.1/jquery-3.3.1.min.js'
 	])
 		.pipe(concat('libs.min.js')) 
-		.pipe(uglify())
+		.pipe(uglifys())
 		.pipe(gulp.dest('assets/js'));
 }
 
