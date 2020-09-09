@@ -1,0 +1,43 @@
+:root {
+  --main-color: #0A1939;
+  --main-pallete: #009faa;
+}
+
+.card-page {
+  width: 100%;
+  position: relative;
+}
+.card-page .container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.card-page .container .card__content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.card-page .container .card__content .gallery-thumbs .swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card-page .container .card__content .swiper-slide {
+  background-size: cover;
+  width: 100% !important;
+  height: 100%;
+}
+.card-page .container .card__content .gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.card-page .container .card__content .gallery-thumbs {
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.card-page .container .card__content .gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+.card-page .container .card__content .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
