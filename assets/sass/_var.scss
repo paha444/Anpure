@@ -1,11 +1,10 @@
 
-//:root {
-//  --main-color: #ff6f69;
-//}
+:root {
+  --main-color: #0A1939;
+  --main-pallete: #009faa;
+}
 
-$maincolor:orange;
-$dark:#000;
-$light:#fff;
+
 $gutter:20px;
 
 @mixin headline-p {

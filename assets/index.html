@@ -30,73 +30,362 @@
 	
   <header>
       <div class="nav-bar">
-          <div class="menu">
-              <div class="logo">
-                  <div class="item--logo"></div>
+
+              <div class="header__top-line">
+                  <div class="logo">
+                      <a href="#" class="item--logo">Logo e-commerce</a>
+                  </div>
+                  <div class="media">
+                      <a href="#" class="instagram"><i class="icon-instagram"></i></a>
+                      <a href="#" class="facebook"><i class="icon-facebook1"></i></a>
+                      <a href="#" class="vk"><i class="icon-vk"></i></a>
+                  </div>
+                  <div class="user-action">
+                      <div class="action__inner">
+                          <a href="#" class="link-to"><i class="icon-office"></i><span>Вход</span></a>
+                          <span class="sep"></span>
+                          <a href="#" class="cart"><i class="icon-cart"></i><span>Корзина <br> пуста</span></a>
+                      </div>
+                  </div>
               </div>
-              <nav class="navigation">
-                  <ul>
-                      <li><a href="" class="link">headline1</a></li>
-                      <li><a href="" class="link">headline2</a></li>
-                      <li><a href="" class="link">headline3</a></li>
-                      <li><a href="" class="link">headline4</a></li>
-                      <li><a href="" class="link">headline5</a></li>
-                      <li><a href="" class="link">headline6</a></li>
-                  </ul>
-              </nav>
-              <div class="contact">
-                  <div class="btn--contact"></div>
+
+
+              <div class="header__bottom-line">
+                  <div class="menu">
+                      <div class="menu-desktop">
+                          <a href="#"><i class="icon-catalogue"></i><p>Каталог товаров</p>
+                          </a>
+                          <div class="side">
+                              <ul class="menu-catalog">
+                                  <li class="menu__list"><a href="#">Категория 1</a>
+                                      <ul class="menu-drop">
+                                          <li><a href="">Подкатегория 1</a></li>
+                                          <li><a href="">Подкатегория 2</a></li>
+                                          <li><a href="">Подкатегория 3</a></li>
+                                          <li><a href="">Подкатегория 4</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="menu__list"><a href="#">Категория 2</a>
+                                      <ul class="menu-drop">
+                                          <li><a href="">Подкатегория 1</a></li>
+                                          <li><a href="">Подкатегория 2</a></li>
+                                          <li><a href="">Подкатегория 3</a></li>
+                                          <li><a href="">Подкатегория 4</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="menu__list"><a href="#">Категория 3</a>
+                                      <ul class="menu-drop">
+                                          <li><a href="">Подкатегория 1</a></li>
+                                          <li><a href="">Подкатегория 2</a></li>
+                                          <li><a href="">Подкатегория 3</a></li>
+                                          <li><a href="">Подкатегория 4</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="menu__list"><a href="#">Категория 4</a>
+                                      <ul class="menu-drop">
+                                          <li><a href="">Подкатегория 1</a></li>
+                                          <li><a href="">Подкатегория 2</a></li>
+                                          <li><a href="">Подкатегория 3</a></li>
+                                          <li><a href="">Подкатегория 4</a></li>
+                                      </ul>
+                                  </li>
+
+                              </ul>
+                          </div>
+                      </div>
+                  <nav class="navigation">
+                      <ul>
+                          <li><a href="" class="link active-href">Главная</a></li>
+                          <li><a href="" class="link">Каталог товаров</a></li>
+                          <li><a href="" class="link">О нас</a></li>
+                          <li><a href="" class="link">Контакты</a></li>
+                      </ul>
+                  </nav>
+                  <div class="search">
+                      <input type="text" placeholder="Поиск...">
+                      <div class="search__block">
+                          <a href="#"><i class="icon-search"></i></a>
+                      </div>
+                  </div>
+
+                  <!--burger menu-->
+                  <div class="burger-menu menu--open">
+                      <span></span>
+                  </div>
+               </div>
               </div>
-              <!--burger menu-->
-              <div class="burger-menu menu--open">
-                  <span></span>
-              </div>
-          </div>
+
+
+
       </div>
       <!--Media nav -->
       <div class="mobile-navigation"></div>
       <!--End NavBar-->
   </header>
 	
-  <section>
-    
+  <section class="main">
+      <div class="wrapper-slide">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><div class="inner-slide"><img src="img/slider-image.jpg" alt=""></div></div>
+                  <div class="swiper-slide"><div class="inner-slide"><img src="img/slider-image.jpg" alt=""></div></div>
+              </div>
+          </div>
+      </div>
+      <div class="layer">
+          <div class="container">
+              <div class="swiper-button-prev"><i class="icon-arrow-left"></i></div>
+              <div class="swiper-button-next"><i class="icon-arrow-right"></i></div>
+          </div>
+      </div>
+
   </section>
+
+  <section class="main-page-shares">
+      <div class="container">
+          <div class="shares__title">
+              Акции
+          </div>
+          <div class="card__inner">
+
+              <div class="product-card__body">
+                  <div class="product-card__preview">
+                      <div class="wrapper-slide">
+                          <div class="swiper-container-card">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                              </div>
+                              <!-- Add Pagination -->
+                          </div>
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="navigation-container">
+                          <div class="swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                          <div class="swiper-button-next"><i class="icon-arrow-right"></i></div>
+                      </div>
+                  </div>
+                  <div class="card__description">
+                      <div class="card__description_inner">
+                      <div class="price__wrapper">
+                          <div class="card__price">5000P <div class="past-price">5000P</div></div>
+                          <div class="discount"><div class="discount__item">-74%</div></div>
+                      </div>
+                      <div class="card__name">Смеситель душевой, хром, полный размер, 2 головы</div>
+                      <div class="card__rating">
+                          <img src="img/rating-item.svg" alt="">
+                          <img src="img/rating-item.svg" alt="">
+                          <img src="img/rating-item.svg" alt="">
+                          <img src="img/rating-item.svg" alt="">
+                      </div>
+
+                      </div>
+                      <div class="bottom__items">
+                          <div class="to__wish_list"><img src="img/wish-item.svg" alt=""></div>
+                          <button type="button" class="add__to_card">
+                              Добавить в корзину
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="product-card__body">
+                  <div class="product-card__preview">
+                      <div class="wrapper-slide">
+                          <div class="swiper-container-card">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                              </div>
+                              <!-- Add Pagination -->
+                          </div>
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="navigation-container">
+                          <div class="swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                          <div class="swiper-button-next"><i class="icon-arrow-right"></i></div>
+                      </div>
+                  </div>
+                  <div class="card__description">
+                      <div class="card__description_inner">
+                          <div class="price__wrapper">
+                              <div class="card__price">5000P <div class="past-price">5000P</div></div>
+                              <div class="discount"><div class="discount__item">-74%</div></div>
+                          </div>
+                          <div class="card__name">Смеситель душевой, хром, полный размер, 2 головы</div>
+                          <div class="card__rating">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                          </div>
+
+                      </div>
+                      <div class="bottom__items">
+                          <div class="to__wish_list"><img src="img/wish-item.svg" alt=""></div>
+                          <button type="button" class="add__to_card">
+                              Добавить в корзину
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="product-card__body">
+                  <div class="product-card__preview">
+                      <div class="wrapper-slide">
+                          <div class="swiper-container-card">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                              </div>
+                              <!-- Add Pagination -->
+                          </div>
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="navigation-container">
+                          <div class="swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                          <div class="swiper-button-next"><i class="icon-arrow-right"></i></div>
+                      </div>
+                  </div>
+                  <div class="card__description">
+                      <div class="card__description_inner">
+                          <div class="price__wrapper">
+                              <div class="card__price">5000P <div class="past-price">5000P</div></div>
+                              <div class="discount"><div class="discount__item">-74%</div></div>
+                          </div>
+                          <div class="card__name">Смеситель душевой, хром, полный размер, 2 головы</div>
+                          <div class="card__rating">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                          </div>
+
+                      </div>
+                      <div class="bottom__items">
+                          <div class="to__wish_list"><img src="img/wish-item.svg" alt=""></div>
+                          <button type="button" class="add__to_card">
+                              Добавить в корзину
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="product-card__body">
+                  <div class="product-card__preview">
+                      <div class="wrapper-slide">
+                          <div class="swiper-container-card">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                              </div>
+                              <!-- Add Pagination -->
+                          </div>
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="navigation-container">
+                          <div class="swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                          <div class="swiper-button-next"><i class="icon-arrow-right"></i></div>
+                      </div>
+                  </div>
+                  <div class="card__description">
+                      <div class="card__description_inner">
+                          <div class="price__wrapper">
+                              <div class="card__price">5000P <div class="past-price">5000P</div></div>
+                              <div class="discount"><div class="discount__item">-74%</div></div>
+                          </div>
+                          <div class="card__name">Смеситель душевой, хром, полный размер, 2 головы</div>
+                          <div class="card__rating">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                              <img src="img/rating-item.svg" alt="">
+                          </div>
+
+                      </div>
+                      <div class="bottom__items">
+                          <div class="to__wish_list"><img src="img/wish-item.svg" alt=""></div>
+                          <button type="button" class="add__to_card">
+                              Добавить в корзину
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+          </div>
+      </div>
+  </section>
+
+  <div class="main-page-banner">
+      <div class="container">
+          <div class="container__inner">
+
+          </div>
+      </div>
+  </div>
+
+  <div class="main-page-popular">
+      <div class="container">
+          <div class="popular__title">
+              Популярные категории
+          </div>
+          <div class="popular__inner">
+              <div class="popular__item"><a href="#"><span class="item__title">Мебель</span></a></div>
+              <div class="popular__item"><a href="#"><div class="item__title">Сантехника</div></a></div>
+              <div class="popular__item"><a href="#"><span class="item__title">Детские товары</span></a></div>
+              <div class="popular__item"><a href="#"><span class="item__title">Уход за питомцами</span></a></div>
+              <div class="popular__item"><a href="#"><span class="item__title">Свет</span></a></div>
+              <div class="popular__item"><a href="#"><span class="item__title">Электричество</span></a></div>
+          </div>
+      </div>
+  </div>
 	
    <footer class="footer">
 
       <div class="footer__inner">
           <div class="footer__top--line">
               <ul class="footer__navigation--list">
-                  <li class="footer__navigation--item">
+                  <li class="footer__navigation--item ">
                       <ul>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>3</li>
-                          <li>4</li>
+                          <li><div class="footer__logo"><a href="#">Logo e-commerce</a></div></li>
+                          <li class="footer__article">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую к </li>
+
+                      </ul>
+                  </li>
+                  <li class="footer__navigation--item centered">
+                      <ul>
+                          <li><a href="#">Главная</a></li>
+                          <li><a href="#">Каталог товаров</a></li>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Контакты</a></li>
                       </ul>
                   </li>
                   <li class="footer__navigation--item">
                       <ul>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>3</li>
-                          <li>4</li>
-                      </ul>
-                  </li>
-                  <li class="footer__navigation--item">
-                      <ul>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>3</li>
-                          <li>4</li>
-                      </ul>
-                  </li>
-                  <li class="footer__navigation--item">
-                      <ul>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>3</li>
-                          <li>4</li>
+                          <li>
+                              <div class="footer__media">
+                                  <a href="#" class="instagram"><i class="icon-instagram"></i></a>
+                                  <a href="#" class="facebook"><i class="icon-facebook1"></i></a>
+                                  <a href="#" class="vk"><i class="icon-vk"></i></a>
+                              </div>
+                          </li>
+                        
+                          <li class="media_block">E-commerce © 2020. Все права защищены</li>
                       </ul>
                   </li>
               </ul>
@@ -112,9 +401,121 @@
 	<link rel="stylesheet"  href="css/header.css" />
 	<link rel="stylesheet"  href="css/main.css" />
 	<link rel="stylesheet"  href="css/footer.css" />
+    <link rel="stylesheet"  href="css/slider.css" />
+    <link rel="stylesheet"  href="css/swiper.css" />
 	<!-- Load Scripts -->
-	<script src="libs/smothscroll.js"></script>
+	<script src="libs/jquery-3.3.1/smothscroll.js"></script>
+    <script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
-        <script src="js/plugins.js"></script>
+    <script src="js/plugins.js"></script>
+  <script>
+       let swiperMain = new Swiper('.swiper-container', {
+
+            // centeredSlides: true,
+            pagination: {
+                 // el: '.swiper-pagination',
+                 clickable: true,
+            },
+            navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            //      delay: 2300,
+            // },
+            speed: 1200,
+            loop: true,
+            breakpoints: {
+                 // when window width is <= 1420px
+                 // 1366: {
+                 //      slidesPerGroup: 3,
+                 //      slidesPerView: 3,
+                 //      spaceBetweenSlides: 30
+                 // },
+                 // // when window width is <= 900px
+                 // 1075: {
+                 //      slidesPerGroup: 3,
+                 //      slidesPerView: 3,
+                 //      spaceBetweenSlides: 40
+                 // },
+                 // 740: {
+                 //      slidesPerView: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetweenSlides: 40,
+                 //      // slidesPerColumn: 1
+                 // },
+                 // 560: {
+                 //      slidesPerView: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetweenSlides: 10,
+                 //      slidesPerColumn: 1,
+                 //      spaceBetween: 10
+                 // },
+                 // 420: {
+                 //      slidesPerView: 2,
+                 //      spaceBetweenSlides: 10,
+                 //      slidesPerColumn: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetween: 10,
+                 // }
+            }
+       });
+
+
+       let swiperCard = new Swiper('.swiper-container-card', {
+            pagination: {
+                 el: '.swiper-pagination',
+                 type: 'bullets',
+                 clickable: true,
+            },
+            // autoplay: {
+            //      delay: 2300,
+            // },
+            navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+            },
+            speed: 1200,
+            loop: true,
+            breakpoints: {
+                 // when window width is <= 1420px
+                 // 1366: {
+                 //      slidesPerGroup: 3,
+                 //      slidesPerView: 3,
+                 //      spaceBetweenSlides: 30
+                 // },
+                 // // when window width is <= 900px
+                 // 1075: {
+                 //      slidesPerGroup: 3,
+                 //      slidesPerView: 3,
+                 //      spaceBetweenSlides: 40
+                 // },
+                 // 740: {
+                 //      slidesPerView: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetweenSlides: 40,
+                 //      // slidesPerColumn: 1
+                 // },
+                 // 560: {
+                 //      slidesPerView: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetweenSlides: 10,
+                 //      slidesPerColumn: 1,
+                 //      spaceBetween: 10
+                 // },
+                 // 420: {
+                 //      slidesPerView: 2,
+                 //      spaceBetweenSlides: 10,
+                 //      slidesPerColumn: 2,
+                 //      slidesPerGroup: 2,
+                 //      spaceBetween: 10,
+                 // }
+            }
+       });
+
+
+
+
+  </script>
 </body>
 </html>
