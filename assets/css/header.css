@@ -84,10 +84,16 @@ header {
   padding: 20px 0 0 0;
   background-color: var(--main-color);
 }
+header .mobile-navigation {
+  display: none;
+}
 header .nav-bar {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 20px;
+}
+header .nav-bar .header__mobile-bar {
+  display: none;
 }
 header .nav-bar .header__top-line {
   display: grid;
@@ -331,53 +337,241 @@ header .nav-bar .header__bottom-line .menu .search__block i {
   content: "";
 }
 
-@media only screen and (max-width: 550px) {
-  header .nav-bar .menu .navigation {
+@media only screen and (max-width: 1465px) {
+  .main {
+    width: 100%;
+    position: relative;
+    height: 370px;
+  }
+  .main .wrapper-slide {
+    height: 370px;
+  }
+}
+@media only screen and (max-width: 1365px) {
+  header {
+    padding: 20px 0;
+  }
+  header .nav-bar .header__top-line {
     display: none;
   }
-  header .nav-bar .menu .contact {
+  header .nav-bar .header__bottom-line {
     display: none;
   }
-  header .nav-bar .menu .burger-menu {
+  header .nav-bar .header__mobile-bar {
     display: grid;
-    justify-self: end;
-    width: 20px;
+    grid-template-columns: 1fr minmax(50px, 1100px) 1fr;
+    padding: 0 15px;
+    align-items: center;
+  }
+  header .nav-bar .header__mobile-bar .logo {
+    display: grid;
+    justify-items: center;
+  }
+  header .nav-bar .header__mobile-bar .logo .item--logo {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  header .nav-bar .header__mobile-bar .action__inner {
+    display: grid;
+    justify-items: end;
+  }
+  header .nav-bar .header__mobile-bar .action__inner a i {
+    font-size: 25px;
+    color: white;
+  }
+  header .nav-bar .header__mobile-bar .burger-menu {
+    display: grid;
+    justify-self: start;
+    width: 30px;
     height: 20px;
     position: relative;
   }
-  header .nav-bar .menu .burger-menu span {
+  header .nav-bar .header__mobile-bar .burger-menu span {
     cursor: pointer;
     border-radius: 10px;
     height: 4px;
     width: 30px;
-    background: black;
+    background: white;
     position: absolute;
     display: block;
     content: "";
     right: 0;
   }
-  header .nav-bar .menu .burger-menu span::before {
+  header .nav-bar .header__mobile-bar .burger-menu span::before {
     top: 16px;
     cursor: pointer;
     border-radius: 20px;
     height: 4px;
     width: 30px;
-    background: black;
+    background: white;
     position: absolute;
     display: block;
     content: "";
     right: 0;
   }
-  header .nav-bar .menu .burger-menu span::after {
+  header .nav-bar .header__mobile-bar .burger-menu span::after {
     cursor: pointer;
     border-radius: 20px;
     height: 4px;
     width: 30px;
-    background: black;
+    background: white;
     position: absolute;
     display: block;
     content: "";
     right: 0;
     top: 8px;
+  }
+  header .mobile-navigation {
+    display: block;
+    position: absolute;
+    transform: translateX(100%);
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+  header .mobile-navigation .top__line {
+    background-color: #fff;
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  header .mobile-navigation .top__line .office {
+    display: grid;
+    justify-items: end;
+  }
+  header .mobile-navigation .top__line .office a {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #344554;
+  }
+  header .mobile-navigation .top__line .office a i {
+    font-size: 25px;
+    padding-left: 15px;
+  }
+  header .mobile-navigation .top__line .close a {
+    display: grid;
+    align-items: center;
+  }
+  header .mobile-navigation .top__line .close i {
+    font-size: 25px;
+  }
+  header .mobile-navigation .menu-mobile {
+    padding: 20px 15px;
+    background-color: var(--main-pallete);
+  }
+  header .mobile-navigation .menu-mobile a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 3fr;
+    grid-gap: 10px;
+  }
+  header .mobile-navigation .menu-mobile a i {
+    display: grid;
+    justify-self: center;
+    font-size: 25px;
+    color: white;
+  }
+  header .mobile-navigation .menu-mobile a p {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  header .mobile-navigation .menu-bottom {
+    background-color: #fff;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 15px;
+  }
+  header .mobile-navigation .menu-bottom .navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  header .mobile-navigation .menu-bottom .navigation ul li {
+    padding-bottom: 10px;
+  }
+  header .mobile-navigation .menu-bottom .navigation ul li a {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: right;
+    color: #344554;
+  }
+  header .mobile-navigation .menu-bottom .media {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+  }
+  header .mobile-navigation .menu-bottom .media a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #344554;
+    display: grid;
+    place-items: center;
+  }
+  header .mobile-navigation .menu-bottom .media a i {
+    color: white;
+  }
+  header .mobile-navigation .search {
+    width: 100%;
+    height: 71px;
+    display: grid;
+    grid-template-columns: 1fr 71px;
+  }
+  header .mobile-navigation .search input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #F8F8F8;
+  }
+  header .mobile-navigation .search input[type=text] {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #343434;
+    padding-left: 30px;
+  }
+  header .mobile-navigation .search .search__block {
+    width: 71px;
+    height: 71px;
+    background-color: var(--main-pallete);
+  }
+  header .mobile-navigation .search .search__block a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  header .mobile-navigation .search .search__block a i {
+    font-size: 25px;
+    color: white;
+  }
+}
+@media only screen and (max-width: 360px) {
+  header .nav-bar .header__mobile-bar .logo .item--logo {
+    font-size: 16px;
   }
 }

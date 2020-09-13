@@ -86,7 +86,8 @@
 }
 .main-page-shares .container .card__inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
   grid-gap: 10px;
 }
 .main-page-shares .container .card__inner .product-card__body {
@@ -339,4 +340,82 @@
   grid-column: 4;
   grid-row: 1/3;
   background-image: url(../img/category-image/6.jpg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-page-popular .container .popular__inner {
+    grid-template-columns: 1fr;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(1) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(2) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(3) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(4) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(5) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .main-page-popular .container .popular__inner .popular__item:nth-child(6) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-page-popular .container .popular__inner .popular__item {
+    min-height: initial;
+  }
+
+  .main-page-popular .container .popular__inner {
+    padding-bottom: 50px;
+  }
+
+  .main {
+    height: 90px;
+  }
+
+  .main .swiper-button-prev, .main .swiper-container-rtl .swiper-button-next {
+    width: 20px;
+    height: 20px;
+  }
+  .main .swiper-button-prev i, .main .swiper-container-rtl .swiper-button-next i {
+    font-size: 15px;
+  }
+
+  .main .swiper-button-next, .main .swiper-container-rtl .swiper-button-prev {
+    width: 20px;
+    height: 20px;
+  }
+  .main .swiper-button-next i, .main .swiper-container-rtl .swiper-button-prev i {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-page-shares .container .card__inner .product-card__body {
+    width: 250px;
+  }
+
+  .main-page-shares .container .card__inner {
+    grid-template-columns: auto;
+  }
 }

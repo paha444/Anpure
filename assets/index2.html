@@ -132,16 +132,16 @@
           <div class="card__content">
               <div class="swiper-container gallery-thumbs">
                   <div class="swiper-wrapper">
-                      <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
-                      <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
+                      <div class="swiper-slide" ><img src="img/card-image/card-2.jpg" alt=""></div>
+                      <div class="swiper-slide" ><img src="img/card-image/card-2.jpg" alt=""></div>
+                      <div class="swiper-slide" ><img src="img/card-image/card-2.jpg" alt=""></div>
+                      <div class="swiper-slide" ><img src="img/card-image/card-2.jpg" alt=""></div>
                   </div>
               </div>
               <div class="swiper-container gallery-top">
                   <div class="swiper-wrapper">
 
-                      <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
+                      <div class="swiper-slide" ><img src="img/card-image/card-2.jpg" alt=""></div>
                       <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
                       <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
                       <div class="swiper-slide" style="background-image:url(img/banner.jpg)"></div>
@@ -215,13 +215,20 @@
 
   <script>
        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            cssMode: true,
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
+            direction: 'vertical',
+
+            mousewheel: true,
+            keyboard: true,
+            allowTouchMove:false
        });
        var galleryTop = new Swiper('.gallery-top', {
+            cssMode: true,
             spaceBetween: 10,
             navigation: {
                  nextEl: '.swiper-button-next',

@@ -9,3 +9,51 @@ function setNavigation() {
      }
 }
 setNavigation();
+
+
+(function () {
+     let burger = document.querySelector('.header .nav-bar .header__mobile-bar .burger-menu');
+     let mobileMenu = document.querySelector('.header .mobile-navigation');
+     let closeBurger = document.querySelector('.header .mobile-navigation .top__line .close')
+
+     burger.addEventListener('click', function () {
+
+               anime({
+                    targets: mobileMenu,
+                    translateX:  ['100%','0'],
+                    duration: 500,
+                    easing: 'easeInQuad'
+               });
+
+     });
+
+     closeBurger.addEventListener('click', function () {
+          anime({
+               targets: mobileMenu,
+               translateX:  ['0','100%'],
+               duration: 500,
+               easing: 'easeInQuad'
+          });
+     });
+
+
+
+})();
+
+(function (){
+     // var images = $('img');
+     // images.each(function(){
+     //      var $this = $(this);
+     //      $this.attr('src', $this.data('src'));
+     // });
+
+     let images = document.getElementsByTagName('img');
+     for (let i = 0; i < images.length; i++) {
+          let src = images[i].dataset.src;
+          if (src) {
+               images[i].src = src;
+          }
+     }
+
+})();
+

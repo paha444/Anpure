@@ -28,7 +28,7 @@
 
 <body>
 	
-  <header>
+  <header class="header">
       <div class="nav-bar">
 
               <div class="header__top-line">
@@ -115,11 +115,62 @@
                </div>
               </div>
 
+         <!-- Mobile bar         -->
+          <div class="header__mobile-bar">
+              <div class="burger-menu menu--open">
+                  <span></span>
+              </div>
+
+              <div class="logo">
+                  <a href="#" class="item--logo">Logo e-commerce</a>
+              </div>
+
+              <div class="action__inner">
+                  <a href="#" class="cart"><i class="icon-cart"></i></a>
+              </div>
+          </div>
+
 
 
       </div>
       <!--Media nav -->
-      <div class="mobile-navigation"></div>
+      <div class="mobile-navigation">
+          <div class="top__line">
+              <div class="close">
+                  <a href="#"><i class="icon-close"></i></a>
+              </div>
+            <div class="office">
+                <a href="#" class="link-to"><span>Вход</span><i class="icon-office"></i></a>
+            </div>
+          </div>
+          <div class="menu-mobile">
+              <a href="#"><i class="icon-catalogue"></i><p>Каталог товаров</p></a>
+          </div>
+
+          <div class="menu-bottom">
+              <nav class="navigation">
+                  <ul>
+                      <li><a href="" class="link">Главная</a></li>
+                      <li><a href="" class="link">Каталог товаров</a></li>
+                      <li><a href="" class="link">О нас</a></li>
+                      <li><a href="" class="link">Контакты</a></li>
+                  </ul>
+              </nav>
+              <div class="media">
+                  <a href="#" class="instagram"><i class="icon-instagram"></i></a>
+                  <a href="#" class="facebook"><i class="icon-facebook1"></i></a>
+                  <a href="#" class="vk"><i class="icon-vk"></i></a>
+              </div>
+          </div>
+          <div class="search">
+              <input type="text" placeholder="Поиск...">
+                                <div class="search__block">
+                                    <a href="#"><i class="icon-search"></i></a>
+                                </div>
+          </div>
+
+
+      </div>
       <!--End NavBar-->
   </header>
 	
@@ -127,8 +178,8 @@
       <div class="wrapper-slide">
           <div class="swiper-container">
               <div class="swiper-wrapper">
-                  <div class="swiper-slide"><div class="inner-slide"><img src="img/slider-image.jpg" alt=""></div></div>
-                  <div class="swiper-slide"><div class="inner-slide"><img src="img/slider-image.jpg" alt=""></div></div>
+                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/slider-image.jpg" alt=""></div></div>
+                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/slider-image.jpg" alt=""></div></div>
               </div>
           </div>
       </div>
@@ -153,10 +204,10 @@
                       <div class="wrapper-slide">
                           <div class="swiper-container-card">
                               <div class="swiper-wrapper">
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
                               </div>
                               <!-- Add Pagination -->
                           </div>
@@ -197,10 +248,10 @@
                       <div class="wrapper-slide">
                           <div class="swiper-container-card">
                               <div class="swiper-wrapper">
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
                               </div>
                               <!-- Add Pagination -->
                           </div>
@@ -241,10 +292,10 @@
                       <div class="wrapper-slide">
                           <div class="swiper-container-card">
                               <div class="swiper-wrapper">
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
                               </div>
                               <!-- Add Pagination -->
                           </div>
@@ -285,10 +336,10 @@
                       <div class="wrapper-slide">
                           <div class="swiper-container-card">
                               <div class="swiper-wrapper">
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-1.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
-                                  <div class="swiper-slide"><div class="inner-slide"><img src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-1.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
+                                  <div class="swiper-slide"><div class="inner-slide"><img data-src="img/card-image/card-2.jpg" alt=""></div></div>
                               </div>
                               <!-- Add Pagination -->
                           </div>
@@ -384,8 +435,9 @@
                                   <a href="#" class="vk"><i class="icon-vk"></i></a>
                               </div>
                           </li>
+                          <li></li>
                         
-                          <li class="media_block">E-commerce © 2020. Все права защищены</li>
+                          <li class="media_block">E-commerce © 2020.<br> Все права защищены</li>
                       </ul>
                   </li>
               </ul>
@@ -396,7 +448,7 @@
 
 	<!-- Load CSS -->
 	
-        <link rel="stylesheet"  href="css/normalize.css" />
+     <link rel="stylesheet"  href="css/normalize.css" />
 	<link rel="stylesheet"  href="css/fonts.css" />
 	<link rel="stylesheet"  href="css/header.css" />
 	<link rel="stylesheet"  href="css/main.css" />
@@ -404,114 +456,70 @@
     <link rel="stylesheet"  href="css/slider.css" />
     <link rel="stylesheet"  href="css/swiper.css" />
 	<!-- Load Scripts -->
+    <script defer src="libs/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 	<script src="libs/jquery-3.3.1/smothscroll.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script defer src="libs/anime.min.js"></script>
+    <script  src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
-    <script src="js/plugins.js"></script>
+    <script defer src="js/plugins.js"></script>
   <script>
-       let swiperMain = new Swiper('.swiper-container', {
-
-            // centeredSlides: true,
-            pagination: {
-                 // el: '.swiper-pagination',
-                 clickable: true,
-            },
-            navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-            },
-            // autoplay: {
-            //      delay: 2300,
-            // },
-            speed: 1200,
-            loop: true,
-            breakpoints: {
-                 // when window width is <= 1420px
-                 // 1366: {
-                 //      slidesPerGroup: 3,
-                 //      slidesPerView: 3,
-                 //      spaceBetweenSlides: 30
-                 // },
-                 // // when window width is <= 900px
-                 // 1075: {
-                 //      slidesPerGroup: 3,
-                 //      slidesPerView: 3,
-                 //      spaceBetweenSlides: 40
-                 // },
-                 // 740: {
-                 //      slidesPerView: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetweenSlides: 40,
-                 //      // slidesPerColumn: 1
-                 // },
-                 // 560: {
-                 //      slidesPerView: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetweenSlides: 10,
-                 //      slidesPerColumn: 1,
-                 //      spaceBetween: 10
-                 // },
-                 // 420: {
-                 //      slidesPerView: 2,
-                 //      spaceBetweenSlides: 10,
-                 //      slidesPerColumn: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetween: 10,
-                 // }
-            }
-       });
+       // let swiperMain = new Swiper('.swiper-container', {
+       //
+       //      // centeredSlides: true,
+       //      pagination: {
+       //           // el: '.swiper-pagination',
+       //           clickable: true,
+       //      },
+       //      navigation: {
+       //           nextEl: '.swiper-button-next',
+       //           prevEl: '.swiper-button-prev',
+       //      },
+       //      // autoplay: {
+       //      //      delay: 2300,
+       //      // },
+       //      speed: 1200,
+       //      loop: true,
+       //      breakpoints: {
+       //
+       //      }
+       // });
 
 
-       let swiperCard = new Swiper('.swiper-container-card', {
-            pagination: {
-                 el: '.swiper-pagination',
-                 type: 'bullets',
-                 clickable: true,
-            },
-            // autoplay: {
-            //      delay: 2300,
-            // },
-            navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-            },
-            speed: 1200,
-            loop: true,
-            breakpoints: {
-                 // when window width is <= 1420px
-                 // 1366: {
-                 //      slidesPerGroup: 3,
-                 //      slidesPerView: 3,
-                 //      spaceBetweenSlides: 30
-                 // },
-                 // // when window width is <= 900px
-                 // 1075: {
-                 //      slidesPerGroup: 3,
-                 //      slidesPerView: 3,
-                 //      spaceBetweenSlides: 40
-                 // },
-                 // 740: {
-                 //      slidesPerView: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetweenSlides: 40,
-                 //      // slidesPerColumn: 1
-                 // },
-                 // 560: {
-                 //      slidesPerView: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetweenSlides: 10,
-                 //      slidesPerColumn: 1,
-                 //      spaceBetween: 10
-                 // },
-                 // 420: {
-                 //      slidesPerView: 2,
-                 //      spaceBetweenSlides: 10,
-                 //      slidesPerColumn: 2,
-                 //      slidesPerGroup: 2,
-                 //      spaceBetween: 10,
-                 // }
-            }
-       });
+
+
+       let card = document.querySelectorAll('.swiper-container-card');
+
+       for (let i = 0; i < card.length ; i++) {
+            let prevButton = card[i].parentElement.parentElement.querySelector('.swiper-button-prev');
+            let nextButton = card[i].parentElement.parentElement.querySelector('.swiper-button-next');
+            let pagination = card[i].parentElement.parentElement.querySelector('.swiper-pagination');
+            card[i].classList.add('s'+i);
+            nextButton.classList.add('s'+i);
+            prevButton.classList.add('s'+i);
+            pagination.classList.add('s'+i);
+       }
+
+       for (let i = 0; i < card.length ; i++) {
+
+
+            let swiperCard = new Swiper('.swiper-container-card.s'+i, {
+                 pagination: {
+                      el: '.swiper-pagination.s'+i,
+                      type: 'bullets',
+                      clickable: true,
+                 },
+                 navigation: {
+                      nextEl: '.swiper-button-next.s'+i,
+                      prevEl: '.swiper-button-prev.s'+i,
+                 },
+                 speed: 1200,
+                 loop: true,
+                 breakpoints: {
+
+                 }
+            });
+       }
+
 
 
 

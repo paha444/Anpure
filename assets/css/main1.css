@@ -36,6 +36,7 @@
   background: #FFFFFF;
   border: 1px solid #D6D6D6;
   box-sizing: border-box;
+  border-bottom: none;
 }
 .catalog-page .container .wrapper__section .right .sorting-options {
   display: grid;
@@ -57,9 +58,10 @@
 }
 .catalog-page .container .card__inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   position: relative;
+  justify-items: center;
 }
 .catalog-page .container .card__inner .product-card__body {
   position: relative;
@@ -215,4 +217,62 @@
   cursor: pointer;
   outline: none;
   border: 1px solid transparent;
+}
+
+.accordion {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid #D6D6D6;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0A1939;
+}
+.accordion i {
+  float: right;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.active i {
+  transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1365px) {
+  .catalog-page .container .wrapper__section {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .catalog-page .container .wrapper__section .right .sorting-options {
+    grid-template-columns: auto;
+  }
+  .catalog-page .container .wrapper__section .right .sorting-options .popularity, .catalog-page .container .wrapper__section .right .sorting-options .show-product {
+    padding-bottom: 10px;
+  }
 }

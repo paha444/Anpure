@@ -57,6 +57,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clock:before {
+  content: "\e904";
+}
+.icon-location:before {
+  content: "\e905";
+}
+.icon-phone-receiver:before {
+  content: "\e906";
+}
 .icon-arrow-bottom:before {
   content: "\e900";
 }
@@ -70,29 +79,32 @@
   content: "\e903";
 }
 .icon-arrow-left:before {
-  content: "\e90c";
-}
-.icon-arrow-right:before {
   content: "\e90d";
 }
-.icon-cart:before {
+.icon-arrow-right:before {
   content: "\e90e";
 }
-.icon-catalogue:before {
+.icon-cart:before {
   content: "\e90f";
 }
-.icon-facebook1:before {
+.icon-catalogue:before {
   content: "\e910";
 }
-.icon-instagram:before {
+.icon-facebook1:before {
   content: "\e911";
 }
-.icon-office:before {
+.icon-instagram:before {
   content: "\e912";
 }
-.icon-search:before {
+.icon-office:before {
   content: "\e913";
 }
-.icon-vk:before {
+.icon-search:before {
   content: "\e914";
+}
+.icon-vk:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e90c";
 }
