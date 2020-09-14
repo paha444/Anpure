@@ -41,12 +41,6 @@ setNavigation();
 })();
 
 (function (){
-     // var images = $('img');
-     // images.each(function(){
-     //      var $this = $(this);
-     //      $this.attr('src', $this.data('src'));
-     // });
-
      let images = document.getElementsByTagName('img');
      for (let i = 0; i < images.length; i++) {
           let src = images[i].dataset.src;
@@ -54,6 +48,5 @@ setNavigation();
                images[i].src = src;
           }
      }
-
 })();
 

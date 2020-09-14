@@ -57,6 +57,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-like:before {
+  content: "\e907";
+}
+.icon-wish:before {
+  content: "\e908";
+}
 .icon-clock:before {
   content: "\e904";
 }

@@ -276,3 +276,12 @@
     padding-bottom: 10px;
   }
 }
+@media only screen and (max-width: 320px) {
+  .catalog-page .container .card__inner {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+
+  .catalog-page .container .card__inner .product-card__body {
+    width: 270px;
+  }
+}

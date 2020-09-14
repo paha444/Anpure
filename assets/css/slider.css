@@ -3,12 +3,6 @@
   --main-pallete: #009faa;
 }
 
-.grid-container {
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .slider-section {
   max-width: 1366px;
   margin: 0 auto;

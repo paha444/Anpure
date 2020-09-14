@@ -176,39 +176,23 @@
 	
 
 
-  <section class="catalog-page">
+  <section class="office__inner">
       <div class="container">
-          <div class="shares__title">
-              Мебель
+          <div class="office__title">
+              Личный кабинет
           </div>
           <div class="wrapper__section">
               <div class="left">
                   <div class="filter">
                       <div class="filter__inner">
-                          <button class="accordion">Беспроцентный кредит <i class="icon-arrow-top"></i></button>
-                          <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          </div>
-
-                          <button class="accordion">Дополнительные опции  <i class="icon-arrow-top"></i></button>
-                          <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          </div>
-
-                          <button class="accordion">Дополнительные опции  <i class="icon-arrow-top"></i></button>
-                          <div class="panel">
-                              <p class="bordered">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          </div>
-
+                          <div class="user office__menu active"><div class="user__circle"><i class="icon-office"></i></div><p>Александрa</p></div>
+                          <div class="basket office__menu"><i class="icon-cart"></i>Корзина</div>
+                          <div class="order office__menu"><i class="icon-like"></i> Мои заказы</div>
+                          <div class="wishlist office__menu"><i class="icon-wish"></i>Список желаний</div>
                       </div>
                   </div>
               </div>
               <div class="right">
-                  <div class="sorting-options">
-                      <div class="popularity">Сортировать: по популярности</div>
-                      <div class="show-product">Показывать на странице товаров: 9- 50</div>
-                      <div class="sort"><a href="#"><i class="icon-tile1"></i></a><a href="#"><i class="icon-tile2"></i></a></div>
-                  </div>
                   <div class="card__inner">
 
                       <div class="product-card__body">
@@ -478,7 +462,10 @@
 
 
                   </div>
-
+               <div class="btn__wrapper">
+                   <div class="btn--processed"><a href="#">Продолжить покупки</a></div>
+                   <div class="btn--checkout"><div class="sum">1 150 000₽</div> <div class="checkout"><a href="#">Оформить заказ</a></div></div>
+               </div>
               </div>
           </div>
 
@@ -535,7 +522,7 @@
         <link rel="stylesheet"  href="css/normalize.css" />
 	<link rel="stylesheet"  href="css/fonts.css" />
 	<link rel="stylesheet"  href="css/header.css" />
-	<link rel="stylesheet"  href="css/main1.css" />
+	<link rel="stylesheet"  href="css/main5.css" />
 	<link rel="stylesheet"  href="css/footer.css" />
     <link rel="stylesheet"  href="css/slider.css" />
     <link rel="stylesheet"  href="css/swiper.css" />
@@ -586,20 +573,22 @@
   </script>
 
 <script>
-     var acc = document.getElementsByClassName("accordion");
-     var i;
+     (function () {
+          const header = document.querySelector('.filter__inner');
+          const btns = header.getElementsByClassName("office__menu");
 
-     for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-               this.classList.toggle("active");
-               var panel = this.nextElementSibling;
-               if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-               } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-               }
-          });
-     }
+          for (let i = 0; i < btns.length; i++) {
+
+               btns[i].addEventListener("click", function() {
+                    let current = document.getElementsByClassName("active");
+                    if (current.length > 0) {
+                         current[0].className = current[0].className.replace("active", "");
+                    }
+                    this.className += " active";
+               });
+          }
+     })();
+
 </script>
 </body>
 </html>
